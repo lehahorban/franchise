@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Franchise</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Обчислення загальної франшизи</h1>
+      <label for="doctor">Франшиза на лікаря (%):</label>
+      <input
+        type="number"
+        id="doctor"
+        placeholder="Введіть франшизу на лікаря"
+      />
+
+      <label for="clinic">Франшиза на клініку (%):</label>
+      <input
+        type="number"
+        id="clinic"
+        placeholder="Введіть франшизу на клініку"
+      />
+
+      <button onclick="calculateFranchise()">Обчислити</button>
+
+      <p id="result"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
