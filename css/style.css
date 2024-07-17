@@ -18,6 +18,7 @@ ul {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +37,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1240px;
   margin: 0 auto;
   padding: 30px;
@@ -43,6 +45,23 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+.thumb {
+  overflow: hidden;
+  position: absolute;
+  bottom: -150px;
+  right: 0;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 label {
